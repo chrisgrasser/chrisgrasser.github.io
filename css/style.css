@@ -16,6 +16,12 @@ body {
     color: #fff;
     font-size: 1.6em;
 }
+.navbar-brand:hover, .navbar-brand:focus {
+    color: #fff;
+}
+.navbar-brand img {
+    margin-right: 0.6em;
+}
 p, .skills li, td, .cert-cred {
     font-size: 1.3em;
 }
