@@ -1,7 +1,7 @@
 /* style.css */
 
 /* Body and Font */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;700&family=Alegreya+Sans:wght@400;700&display=swap');
 html {
     scroll-behavior: smooth !important;
 }
@@ -9,14 +9,15 @@ body {
     background: #1e1e1e fixed no-repeat center url('../img/black-sand-bg.jpg');
     background-size: cover;
     color: #fff;
-    font-family: 'Lato', Verdana, 'Geneva', Tahoma, sans-serif;
+    font-family: 'Alegreya Sans', Verdana, 'Geneva', Tahoma, sans-serif;
 }
-p, .skills li, td {
+.navbar-brand {
+    font-family: 'Alegreya Sans SC', Verdana, 'Geneva', Tahoma, sans-serif;
+    color: #fff;
+    font-size: 1.6em;
+}
+p, .skills li, td, .cert-cred {
     font-size: 1.3em;
-}
-td {
-    vertical-align: top;
-    padding: 2px 10px;
 }
 .row {
     width: 100%;
@@ -30,11 +31,14 @@ td {
     margin-top: 100px !important;
     margin-bottom: 100px !important;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alegreya Sans SC', Verdana, 'Geneva', Tahoma, sans-serif;
+}
 
 /* Media Queries */
 @media (min-width: 1200px) {
     .card-header {
-        height: 180px;
+        height: 165px;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -78,6 +82,9 @@ td {
 nav, footer {
     background: #0e0e0e;
 }
+nav {
+    border-bottom: 2px solid #fff;
+}
 footer p {
     font-size: 1em;
     margin: 0;
@@ -94,7 +101,7 @@ footer p {
 }
 .nav-item a:hover, .nav-item a:focus {
     color: #fff;
-    border-bottom: 2px solid #244c16;
+    border-bottom: 2px solid #ff0088;
 }
 a.popout, a.popout:link, a.popout:active {
     color: #fff;
@@ -104,22 +111,24 @@ a.popout:hover, a.popout:focus {
     border-color: transparent;
 }
 .show .popout, .collapsing .popout {
-    background: #152e0c;
+    background: #ff008899;
 }
 .show li a, .collapsing li a {
     padding-left: 10px;
     border-radius: 10px;
 }
 .show li a:hover, .show li a:focus {
-    background-color: #244c16;
+    background-color: #ff0088;
     border-color: transparent;
 }
 .navbar-toggler {
     border: none;
-    background-color: #152e0c;
+    background-color: #ff008899;
+    border: 2px solid #fff;
+    color: #fff !important;
 }
 .navbar-toggler:hover, .navbar-toggler:focus {
-    background-color: #244c16;
+    background-color: #ff0088;
 }
 
 /* Hero Section */
@@ -132,11 +141,12 @@ a.popout:hover, a.popout:focus {
     height: 93vh;
 }
 .hero-inner {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
+    background: #222;
     min-width: 40%;
     max-width: 800px;
-    border-radius: 20px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 0 -2px #73e600, 10px 10px 0 #fff;
 }
 .hero-inner > h1 {
     font-size: 3.5em;
@@ -148,32 +158,36 @@ a.popout:hover, a.popout:focus {
     width: 300px;
     height: 300px;
     object-fit: cover;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0 -2px #73e600, 8px 8px 0 #fff;
 }
 .about, .contact {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
+    background: #222;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 /* Skills */
 
 .skills .row {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
+    background: #222;
     padding: 40px;
     border-radius: 20px;
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 0 -2px #73e600, 10px 10px 0 #fff;
 }
 .skills h1, .contact h1, .portfolio h1 {
-    border-bottom: 3px solid #244c16;
+    border-bottom: 3px solid #73e600;
 }
 
 /* Certifications */
 
 .cert {
-    background: #244c16;
+    background: #b8146b;
     color: #fff;
-}
-table {
-    width: 100%;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 .cert h1 {
     border-bottom: 3px solid #fff;
@@ -182,12 +196,13 @@ table {
 /* Portfolio */
 
 .portfolio .col {
-    padding: 20px;
+    padding: 40px;
 }
 .card {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
+    background: #222;
     border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 0 -2px #73e600, 10px 10px 0 #fff;
     padding: 20px;
 }
 .card-header {
@@ -227,11 +242,11 @@ table {
     margin: 0;
     font-size: 0.8em;
 }
-.green {
-    color: #2f631d;
+.pink {
+    color: #ff008899;
 }
-.green:hover, .green:focus {
-    color: #fff;
+.pink:hover, .pink:focus {
+    color: #ff0088;
 }
 .tutor {
     width: 100%;
@@ -248,16 +263,19 @@ table {
     margin-top: 40px;
     margin-bottom: 10px;
 }
-.popout, .btn {
-    background-color: #244c16;
+.nav-link.popout, .btn {
+    background-color: #ff008899;
     border-radius: 5px;
+    border: 2px solid #fff;
     color: #fff;
+    font-weight: bold;
 }
 .btn {
     margin-right: 10px;
 }
-.btn:hover, .btn:focus, .popout:hover, .popout:focus {
-    background-color: #152e0c;
+.btn:hover, .btn:focus, .nav-link.popout:hover, .nav-link.popout:focus {
+    background-color: #ff0088;
+    border: 2px solid #fff;
 }
 
 /* Mini Menu */
@@ -266,14 +284,14 @@ table {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
+    background: #222;
     border-radius: 100px;
+    border: 2px solid #fff;
     padding: 10px 20px 10px 20px;
 }
 .menu-icon {
-    color: #418a28;
+    color: #ff008899;
 }
 .menu-icon:hover, .menu-icon:focus {
-    color: #fff;
+    color: #ff0088;
 }
