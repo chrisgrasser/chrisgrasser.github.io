@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial Resources</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,7 +13,10 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">The Lagoon</a>
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="lagoon logo" class="ps-1 pb-1" height="28">
+                The Lagoon
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,16 +32,50 @@
             </div>
         </div>
     </nav>
-    <div class="container bg-body my-1 my-sm-5 pb-5">
+    <div class="container bg-body my-1 my-sm-5 pb-4">
         <div class="row">
             <div class="col-12 text-center mb-4 p-4 bg-green">
                 <h1 class="m-0">Student Financial Resources</h1>
             </div>
         </div>
+        <div class="row mx-1">
+            <div class="col-12 mb-4">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Quick Navigation</h5>
+                        <ul class="card-text">
+                            <li>
+                                <a href="#aid">Financial Aid</a>
+                            </li>
+                            <li>
+                                <a href="#schol">Scholarship Opportunities</a>
+                            </li>
+                            <li>
+                                <a href="#ment">Mental and Physical Health</a>
+                            </li>
+                            <li>
+                                <a href="#supp">Support</a>
+                            </li>
+                            <li>
+                                <a href="#disc">Student Discounts</a>
+                            </li>
+                            <li>
+                                <a href="#add">Additional Resources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="bg-green mb-4">&nbsp;</div>
+        </div>
+
         <!-- financial aid -->
         <div class="row mx-1">
             <div class="col-12">
-                <h2>Financial Aid</h2>
+                <h2 id="aid">Financial Aid</h2>
             </div>
         </div>
         <div class="row mx-1">
@@ -61,10 +99,15 @@
                     ways that students can pay for college, how they can save money, and how to create a budget.</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="bg-green mt-1 mb-4">&nbsp;</div>
+        </div>
+
         <!-- scholarships -->
         <div class="row mx-1">
             <div class="col-12">
-                <h2>Scholarship Opportunities</h2>
+                <h2 id="schol">Scholarship Opportunities</h2>
             </div>
         </div>
         <div class="row mx-1">
@@ -95,10 +138,15 @@
                 <p class="text-muted">Links to College Scholarships on the Clark College website.</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="bg-green mt-1 mb-4">&nbsp;</div>
+        </div>
+
         <!-- mental and phys health resources -->
         <div class="row mx-1">
             <div class="col-12">
-                <h2>Mental and Physical Health</h2>
+                <h2 id="ment">Mental and Physical Health</h2>
             </div>
         </div>
         <div class="row mx-1">
@@ -163,10 +211,15 @@
                     students. </p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="bg-green mt-1 mb-4">&nbsp;</div>
+        </div>
+
         <!-- misc support resources -->
         <div class="row mx-1">
             <div class="col-12">
-                <h2>Support</h2>
+                <h2 id="supp">Support</h2>
             </div>
         </div>
         <div class="row mx-1">
@@ -213,10 +266,15 @@
                     designed to support students.</p>
             </div>
         </div>
+
+        <div class="row">
+            <div class="bg-green mt-1 mb-4">&nbsp;</div>
+        </div>
+
         <!-- student discounts -->
         <div class="row mx-1">
             <div class="col-12">
-                <h2>Student Discounts</h2>
+                <h2 id="disc">Student Discounts</h2>
             </div>
         </div>
         <div class="row mx-1 mb-3">
@@ -354,17 +412,24 @@
                     Premium</a>
             </div>
         </div>
+
+        <div class="row">
+            <div class="bg-green mt-1 mb-4">&nbsp;</div>
+        </div>
+
         <!-- any other miscellaneous stuff -->
         <div class="row mx-1">
             <div class="col-12">
-                <h2>Additional Resources</h2>
+                <h2 id="add">Additional Resources</h2>
             </div>
         </div>
         <div class="row mx-1">
             <div class="col-12 col-lg-6">
-                <a href="#">Subscription Spreadsheet</a>
-                <p class="text-muted">Use this spreadsheet to quickly view how much you'll save on subscriptions with
-                    student discounts. SPREADSHEET STILL NEED TO BE ADDED</p>
+                <a href="./inc/sub-savings.xlsx">Subscription Spreadsheet</a>
+                <p class="text-muted">Click to download this spreadsheet and use it to quickly view how much you'll save
+                    on subscriptions with
+                    student discounts. You can also filter it based on which subscriptions you currently have using the
+                    available slicer.</p>
             </div>
         </div>
     </div>

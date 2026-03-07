@@ -88,11 +88,6 @@ h5 {
     margin-bottom: -0.25em;
 }
 
-.subtitle {
-    font-size: 0.9em;
-    font-style: italic;
-}
-
 @media (max-width: 575px) {
     .container {
         border-width: 2px 0;
